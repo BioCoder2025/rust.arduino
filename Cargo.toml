@@ -1,0 +1,30 @@
+[package]
+name = "rust-arduino"
+version = "0.1.0"
+edition = "2024"
+
+[profile.dev]
+panic="abort"
+[profile.release]
+panic="abort"
+
+[dependencies]
+panic-halt = "1.0.0"
+ufmt = "0.2.0"
+nb = "1.1.0"
+embedded-hal = "1.0"
+pwm-pca9685 = "1.0.0"
+infrared = "0.14.1"
+embedded-storage = "0.2"
+
+[dependencies.arduino-hal]
+git = "https://github.com/rahix/avr-hal"
+rev = "6807aaf32ea99bc860393b8f0fdaf4384ca011bc"
+features = ["arduino-uno"]
+
+[dependencies.avr-device]
+version = "0.7"
+
+[dependencies.either]
+version = "1.6.1"
+default-features = false

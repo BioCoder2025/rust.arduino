@@ -1,0 +1,11 @@
+[general]
+board = "uno"
+serial-baudrate = 57600
+open-console = true
+
+# The Arduino Leonardo does not have a UART console like other Arduino boards.
+# Instead, it can emulate a console device over USB, but this is not yet
+# supported in `avr-hal`.  To get console output from an Arduino Leonardo, you
+# need to connect an external usb-serial converter to the TX/RX pins of your
+# board.
+# open-console = false
